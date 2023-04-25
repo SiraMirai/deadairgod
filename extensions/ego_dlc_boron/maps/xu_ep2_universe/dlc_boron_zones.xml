@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='utf-8'?>
+<diff>
+  <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_602_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_602_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_603_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_603_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_605_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_605_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_606_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_606_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_606_Sector002_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_606_Sector002_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_606_Sector003_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_606_Sector003_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+    <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_604_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_604_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+    <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_607_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_607_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+    <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_601_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_601_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+    <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_608_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_608_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+    <add sel="/macros">
+    <macro name="ZoneDA1_Cluster_609_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+  <add sel="/macros">
+    <macro name="ZoneDA2_Cluster_609_Sector001_macro" class="zone">
+      <component ref="standardzone"/>
+    </macro>
+  </add>
+</diff>

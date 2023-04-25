@@ -450,6 +450,57 @@
   <add sel="/defaults/dataset[@macro='Cluster_100_Sector001_macro']/properties">
     <area economy="1.0" security="0.9"/>
   </add>
+  <replace sel="/defaults/dataset[@macro='Cluster_601_macro']/properties/area/@economy">1.0</replace>
+  <replace sel="/defaults/dataset[@macro='Cluster_601_macro']/properties/area/@security">0.8</replace>
+  <add sel="/defaults/dataset[@macro='Cluster_601_Sector001_macro']/properties">
+    <area economy="1.0" security="0.8"/>
+  </add>
+  <replace sel="/defaults/dataset[@macro='Cluster_602_macro']/properties/area/@economy">1.0</replace>
+  <replace sel="/defaults/dataset[@macro='Cluster_602_macro']/properties/area/@security">0.9</replace>
+  <add sel="/defaults/dataset[@macro='Cluster_602_Sector001_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
+  <replace sel="/defaults/dataset[@macro='Cluster_603_macro']/properties/area/@economy">1.0</replace>
+  <replace sel="/defaults/dataset[@macro='Cluster_603_macro']/properties/area/@security">1.0</replace>
+  <add sel="/defaults/dataset[@macro='Cluster_603_Sector001_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
+  <replace sel="/defaults/dataset[@macro='Cluster_604_macro']/properties/area/@economy">1.0</replace>
+  <replace sel="/defaults/dataset[@macro='Cluster_604_macro']/properties/area/@security">0.8</replace>
+  <add sel="/defaults/dataset[@macro='Cluster_604_Sector001_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
+  <replace sel="/defaults/dataset[@macro='Cluster_605_macro']/properties/area/@economy">1.0</replace>
+  <replace sel="/defaults/dataset[@macro='Cluster_605_macro']/properties/area/@security">0.8</replace>
+  <add sel="/defaults/dataset[@macro='Cluster_605_Sector001_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
+  <replace sel="/defaults/dataset[@macro='Cluster_606_macro']/properties/area/@economy">1.0</replace>
+  <replace sel="/defaults/dataset[@macro='Cluster_606_macro']/properties/area/@security">1.0</replace>
+  <add sel="/defaults/dataset[@macro='Cluster_606_Sector001_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
+  <add sel="/defaults/dataset[@macro='Cluster_606_Sector002_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
+  <add sel="/defaults/dataset[@macro='Cluster_606_Sector002_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
+  <replace sel="/defaults/dataset[@macro='Cluster_607_macro']/properties/area/@economy">1.0</replace>
+  <replace sel="/defaults/dataset[@macro='Cluster_607_macro']/properties/area/@security">0.8</replace>
+  <add sel="/defaults/dataset[@macro='Cluster_607_Sector001_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
+  <replace sel="/defaults/dataset[@macro='Cluster_608_macro']/properties/area/@economy">1.0</replace>
+  <replace sel="/defaults/dataset[@macro='Cluster_608_macro']/properties/area/@security">0.8</replace>
+  <add sel="/defaults/dataset[@macro='Cluster_608_Sector001_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
+  <replace sel="/defaults/dataset[@macro='Cluster_609_macro']/properties/area/@economy">1.0</replace>
+  <replace sel="/defaults/dataset[@macro='Cluster_609_macro']/properties/area/@security">0.8</replace>
+  <add sel="/defaults/dataset[@macro='Cluster_609_Sector001_macro']/properties">
+    <area economy="1.0" security="0.9"/>
+  </add>
   <replace sel="/defaults/dataset[@macro='Cluster_101_macro']/properties/area/@economy">1.0</replace>
   <replace sel="/defaults/dataset[@macro='Cluster_101_macro']/properties/area/@security">0.8</replace>
   <add sel="/defaults/dataset[@macro='Cluster_101_Sector001_macro']/properties">

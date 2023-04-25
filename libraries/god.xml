@@ -206,19 +206,21 @@
     </loadout>
   </add>
   <remove sel="/god/stations/station[@id='wharf_split_02'][@type='factory']"/>
-  <replace sel="/god/stations/station[@id='spl_defence_cluster_400_sector001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
-  <remove sel="/god/stations/station[@id='spl_defence_cluster_401_sector001'][@type='factory']/station/select[@faction='split']/loadout"/>
-  <add sel="/god/stations/station[@id='spl_defence_cluster_401_sector001'][@type='factory']/station">
+  <replace sel="/god/stations/station[@id='spl_defence_cluster_400_sector001'][@type='factory']/station/loadout">
     <loadout>
       <level exact="1.0"/>
     </loadout>
-  </add>
-  <remove sel="/god/stations/station[@id='spl_defence_cluster_401_sector001_2'][@type='factory']/station/select[@faction='split']/loadout"/>
-  <add sel="/god/stations/station[@id='spl_defence_cluster_401_sector001_2'][@type='factory']/station">
+  </replace>
+  <replace sel="/god/stations/station[@id='spl_defence_cluster_401_sector001'][@type='factory']/station/loadout">
     <loadout>
       <level exact="1.0"/>
     </loadout>
-  </add>
+  </replace>
+  <replace sel="/god/stations/station[@id='spl_defence_cluster_401_sector001_2'][@type='factory']/station/loadout">
+    <loadout>
+      <level exact="1.0"/>
+    </loadout>
+  </replace>
   <add sel="/god/stations/station[@id='spl_defence_cluster_402_sector001'][@type='factory']/station">
     <loadout>
       <level exact="1.0"/>
@@ -291,14 +293,6 @@
       <level exact="1.0"/>
     </loadout>
   </add>
-  <remove sel="/god/stations/station[@id='arg_defence_cluster_416_sector001'][@type='factory']"/>
-  <remove sel="/god/stations/station[@id='arg_defence_cluster_416_sector002'][@type='factory']"/>
-  <remove sel="/god/stations/station[@id='arg_wharf_cluster_416_sector002'][@type='factory']"/>
-  <remove sel="/god/stations/station[@id='arg_defence_cluster_417_sector001'][@type='factory']"/>
-  <remove sel="/god/stations/station[@id='par_defence_cluster_423_sector001'][@type='factory']"/>
-  <remove sel="/god/stations/station[@id='par_defence_cluster_423_sector002'][@type='factory']"/>
-  <remove sel="/god/stations/station[@id='par_defence_cluster_422_sector001'][@type='factory']"/>
-  <remove sel="/god/stations/station[@id='par_wharf_cluster_422_sector001'][@type='factory']"/>
   <add sel="/god/stations/station[@id='tel_defence_cluster_419_sector001'][@type='factory']/station">
     <loadout>
       <level exact="1.0"/>
@@ -342,6 +336,265 @@
   <replace sel="/god/stations/station[@id='pio_defence_cluster_113_sector001'][@type='factory']/station/loadout/level[@exact='0.7']/@exact">1.0</replace>
   <replace sel="/god/stations/station[@id='pio_defence_cluster_114_sector001'][@type='factory']/station/loadout/level[@exact='0.7']/@exact">1.0</replace>
   <replace sel="/god/stations/station[@id='pio_defence_cluster_115_sector001'][@type='factory']/station/loadout/level[@exact='0.7']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_defence_602_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_defence_603_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_wharf_603_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_defence_606_003'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_defence_606_002'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_defence_606_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_wharf_606_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_shipyard_606_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_defence_607_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_defence_608_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_defence_609_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/stations/station[@id='boron_equipment_609_001'][@type='factory']/station/loadout/level[@exact='0.75']/@exact">1.0</replace>
+  <replace sel="/god/products/product[@id='bor_advancedcomposites'][@type='factory']/quotas/quota/@galaxy">4</replace>
+  <replace sel="/god/products/product[@id='bor_advancedcomposites'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_advancedcomposites'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_advancedcomposites'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_advancedcomposites'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_advancedcomposites'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.6" max="0.95"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_advancedcomposites'][@type='factory']/module/select" type="@faction">boron</add>
+    <replace sel="/god/products/product[@id='bor_advancedelectronics'][@type='factory']/quotas/quota/@galaxy">16</replace>
+  <add sel="/god/products/product[@id='bor_advancedelectronics'][@type='factory']/quotas/quota" type="@sector">12</add>
+  <replace sel="/god/products/product[@id='bor_advancedelectronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_advancedelectronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_advancedelectronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_advancedelectronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_advancedelectronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_advancedelectronics'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_antimattercells'][@type='factory']/quotas/quota/@galaxy">4</replace>
+  <replace sel="/god/products/product[@id='bor_antimattercells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_antimattercells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_antimattercells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_antimattercells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <add sel="/god/products/product[@id='bor_antimattercells'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_antimatterconverters'][@type='factory']/quotas/quota/@galaxy">10</replace>
+  <replace sel="/god/products/product[@id='bor_antimatterconverters'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_antimatterconverters'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_antimatterconverters'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_antimatterconverters'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_antimatterconverters'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_antimatterconverters'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_claytronics'][@type='factory']/quotas/quota/@galaxy">16</replace>
+  <add sel="/god/products/product[@id='bor_claytronics'][@type='factory']/quotas/quota" type="@sector">8</add>
+  <replace sel="/god/products/product[@id='bor_claytronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_claytronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_claytronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_claytronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_claytronics'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_claytronics'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_dronecomponents'][@type='factory']/quotas/quota/@galaxy">4</replace>
+  <replace sel="/god/products/product[@id='bor_dronecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_dronecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_dronecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_dronecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_dronecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.6"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_dronecomponents'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_energycells'][@type='factory']/quotas/quota/@galaxy">40</replace>
+  <replace sel="/god/products/product[@id='bor_energycells'][@type='factory']/quotas/quota/@cluster">20</replace>
+  <replace sel="/god/products/product[@id='bor_energycells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_energycells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_energycells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_energycells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <remove sel="/god/products/product[@id='bor_energycells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy"/>
+  <add sel="/god/products/product[@id='bor_energycells'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']">
+    <security min="0.6" max="0.95"/>
+  </add>
+  <add sel="/god/products/product[@id='bor_energycells'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_engineparts'][@type='factory']/quotas/quota/@galaxy">12</replace>
+  <replace sel="/god/products/product[@id='bor_engineparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_engineparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_engineparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_engineparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_engineparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_engineparts'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_fieldcoils'][@type='factory']/quotas/quota/@galaxy">4</replace>
+  <replace sel="/god/products/product[@id='bor_fieldcoils'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_fieldcoils'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_fieldcoils'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_fieldcoils'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_fieldcoils'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_fieldcoils'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_bofu'][@type='factory']/quotas/quota/@galaxy">25</replace>
+  <add sel="/god/products/product[@id='bor_bofu'][@type='factory']/quotas/quota" type="@sector">20</add>
+  <replace sel="/god/products/product[@id='bor_bofu'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_bofu'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_bofu'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_bofu'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <remove sel="/god/products/product[@id='bor_bofu'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy"/>
+  <add sel="/god/products/product[@id='bor_bofu'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_graphene'][@type='factory']/quotas/quota/@galaxy">26</replace>
+  <replace sel="/god/products/product[@id='bor_graphene'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_graphene'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_graphene'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_graphene'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <add sel="/god/products/product[@id='bor_graphene'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_hullparts'][@type='factory']/quotas/quota/@galaxy">70</replace>
+  <add sel="/god/products/product[@id='bor_hullparts'][@type='factory']/quotas/quota" type="@sector">36</add>
+  <replace sel="/god/products/product[@id='bor_hullparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_hullparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_hullparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_hullparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_hullparts'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_hullparts'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_bogas'][@type='factory']/quotas/quota/@galaxy">12</replace>
+  <replace sel="/god/products/product[@id='bor_bogas'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_bogas'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_bogas'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_bogas'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_bogas'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.65" max="0.85"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_bogas'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_medicalsupplies'][@type='factory']/quotas/quota/@galaxy">40</replace>
+  <add sel="/god/products/product[@id='bor_medicalsupplies'][@type='factory']/quotas/quota" type="@sector">24</add>
+  <replace sel="/god/products/product[@id='bor_medicalsupplies'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_medicalsupplies'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_medicalsupplies'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_medicalsupplies'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <remove sel="/god/products/product[@id='bor_medicalsupplies'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy"/>
+  <add sel="/god/products/product[@id='bor_medicalsupplies'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_microchips'][@type='factory']/quotas/quota/@galaxy">42</replace>
+  <add sel="/god/products/product[@id='bor_microchips'][@type='factory']/quotas/quota" type="@sector">24</add>
+  <replace sel="/god/products/product[@id='bor_microchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_microchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_microchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_microchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_microchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.6" max="0.95"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_microchips'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_missilecomponents'][@type='factory']/quotas/quota/@galaxy">8</replace>
+  <replace sel="/god/products/product[@id='bor_missilecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_missilecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_missilecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_missilecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_missilecomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.6" max="0.95"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_missilecomponents'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_plasmaconductors'][@type='factory']/quotas/quota/@galaxy">18</replace>
+  <replace sel="/god/products/product[@id='bor_plasmaconductors'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_plasmaconductors'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_plasmaconductors'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_plasmaconductors'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_plasmaconductors'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.6" max="0.95"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_plasmaconductors'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_quantumtubes'][@type='factory']/quotas/quota/@galaxy">24</replace>
+  <add sel="/god/products/product[@id='bor_quantumtubes'][@type='factory']/quotas/quota" type="@sector">14</add>
+  <replace sel="/god/products/product[@id='bor_quantumtubes'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_quantumtubes'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_quantumtubes'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_quantumtubes'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_quantumtubes'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.6" max="0.95"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_quantumtubes'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_refinedmetals'][@type='factory']/quotas/quota/@galaxy">46</replace>
+  <remove sel="/god/products/product[@id='bor_refinedmetals'][@type='factory']/quotas/quota/@sector"/>
+  <replace sel="/god/products/product[@id='bor_refinedmetals'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_refinedmetals'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_refinedmetals'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_refinedmetals'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_refinedmetals'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/region/@max">100000</replace>
+  <remove sel="/god/products/product[@id='bor_refinedmetals'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy"/>
+  <add sel="/god/products/product[@id='bor_refinedmetals'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_scanningarrays'][@type='factory']/quotas/quota/@galaxy">8</replace>
+  <replace sel="/god/products/product[@id='bor_scanningarrays'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_scanningarrays'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_scanningarrays'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_scanningarrays'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_scanningarrays'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.6" max="0.95"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_scanningarrays'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_shieldcomponents'][@type='factory']/quotas/quota/@galaxy">16</replace>
+  <add sel="/god/products/product[@id='bor_shieldcomponents'][@type='factory']/quotas/quota" type="@sector">10</add>
+  <replace sel="/god/products/product[@id='bor_shieldcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_shieldcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_shieldcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_shieldcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_shieldcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_shieldcomponents'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_siliconwafers'][@type='factory']/quotas/quota/@galaxy">28</replace>
+  <remove sel="/god/products/product[@id='bor_siliconwafers'][@type='factory']/quotas/quota/@sector"/>
+  <replace sel="/god/products/product[@id='bor_siliconwafers'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_siliconwafers'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_siliconwafers'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_siliconwafers'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <remove sel="/god/products/product[@id='bor_siliconwafers'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy"/>
+  <add sel="/god/products/product[@id='bor_siliconwafers'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_smartchips'][@type='factory']/quotas/quota/@galaxy">20</replace>
+  <add sel="/god/products/product[@id='bor_smartchips'][@type='factory']/quotas/quota" type="@sector">10</add>
+  <replace sel="/god/products/product[@id='bor_smartchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_smartchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_smartchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_smartchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_smartchips'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_smartchips'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_superfluidcoolant'][@type='factory']/quotas/quota/@galaxy">10</replace>
+  <replace sel="/god/products/product[@id='bor_superfluidcoolant'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_superfluidcoolant'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_superfluidcoolant'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_superfluidcoolant'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <add sel="/god/products/product[@id='bor_superfluidcoolant'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_turretcomponents'][@type='factory']/quotas/quota/@galaxy">20</replace>
+  <add sel="/god/products/product[@id='bor_turretcomponents'][@type='factory']/quotas/quota" type="@sector">10</add>
+  <replace sel="/god/products/product[@id='bor_turretcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_turretcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_turretcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_turretcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_turretcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_turretcomponents'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_water'][@type='factory']/quotas/quota/@galaxy">8</replace>
+  <replace sel="/god/products/product[@id='bor_water'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_water'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_water'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_water'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <add sel="/god/products/product[@id='bor_water'][@type='factory']/module/select" type="@faction">boron</add>
+  <replace sel="/god/products/product[@id='bor_weaponcomponents'][@type='factory']/quotas/quota/@galaxy">16</replace>
+  <add sel="/god/products/product[@id='bor_weaponcomponents'][@type='factory']/quotas/quota" type="@sector">8</add>
+  <replace sel="/god/products/product[@id='bor_weaponcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_weaponcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_weaponcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_weaponcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <replace sel="/god/products/product[@id='bor_weaponcomponents'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy">
+    <security min="0.75"/>
+  </replace>
+  <add sel="/god/products/product[@id='bor_weaponcomponents'][@type='factory']/module/select" type="@faction">boron</add>  
+  <replace sel="/god/products/product[@id='bor_plankton'][@type='factory']/quotas/quota/@galaxy">25</replace>
+  <add sel="/god/products/product[@id='bor_plankton'][@type='factory']/quotas/quota" type="@sector">20</add>
+  <replace sel="/god/products/product[@id='bor_plankton'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='boron']/@faction">[boron]</replace>
+  <replace sel="/god/products/product[@id='bor_plankton'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/@comparison">exact</replace>
+  <add sel="/god/products/product[@id='bor_plankton'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@newzonechance">0.0</add>
+  <add sel="/god/products/product[@id='bor_plankton'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']" type="@matchextension">false</add>
+  <remove sel="/god/products/product[@id='bor_plankton'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[boron]']/economy"/>
+  <add sel="/god/products/product[@id='bor_plankton'][@type='factory']/module/select" type="@faction">boron</add>
   <replace sel="/god/products/product[@id='arg_advancedcomposites'][@type='factory']/quotas/quota/@galaxy">4</replace>
   <replace sel="/god/products/product[@id='arg_advancedcomposites'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[argon, hatikvah]']/@faction">[argon]</replace>
   <replace sel="/god/products/product[@id='arg_advancedcomposites'][@type='factory']/location[@macro='xu_ep2_universe_macro'][@faction='[argon]']/@comparison">exact</replace>
